@@ -14,7 +14,6 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java-version>1.8</java-version>
-		<xml-parser-version>0.1-SNAPSHOT</xml-parser-version>
 	</properties>
 
 	<build>
@@ -35,16 +34,14 @@
 				<version>2.5.2</version>
 				<executions>
 					<execution>
-						<id>install-external-non-maven1-jar</id>
+						<id>install-external-non-maven-jar1</id>
 						<phase>clean</phase>
 						<configuration>
-							<repositoryLayout>default</repositoryLayout>
 							<groupId>com.corporation</groupId>
 							<artifactId>task03-xml-parser</artifactId>
-							<version>${xml-parser-version}</version>
-							<file>${project.basedir}/lib/task03-xml-parser.jar</file>
+							<version>0.1</version>
+							<file>${basedir}/lib/task03-xml-parser-0.1.jar</file>
 							<packaging>jar</packaging>
-							<generatePom>true</generatePom>
 						</configuration>
 						<goals>
 							<goal>install-file</goal>
@@ -59,7 +56,7 @@
 		<dependency>
 			<groupId>com.corporation</groupId>
 			<artifactId>task03-xml-parser</artifactId>
-			<version>${xml-parser-version}</version>
+			<version>0.1</version>
 		</dependency>
 	</dependencies>
 

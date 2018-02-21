@@ -1,8 +1,8 @@
 package com.corporation.task03parser.entity;
 
-public enum Type {
+public enum NodeType {
 
-	CONTENT,
+	CHARACTERS,
 	START_TAG,
 	END_TAG,
 	EMPTY_ELEMENT_TAG

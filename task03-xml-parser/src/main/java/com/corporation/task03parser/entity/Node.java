@@ -3,7 +3,7 @@ package com.corporation.task03parser.entity;
 public class Node {
 
 	private String name;
-	private Type type;
+	private NodeType type;
 	
 	public String getName() {
 		return name;
@@ -13,14 +13,14 @@ public class Node {
 		this.name = name;
 	}
 	
-	public Type getType() {
+	public NodeType getType() {
 		return type;
 	}
 	
-	public void setType(Type type) {
+	public void setType(NodeType type) {
 		this.type = type;
 	}
-
+ 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
