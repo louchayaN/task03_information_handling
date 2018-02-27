@@ -61,7 +61,7 @@ public class DefaultReader extends Reader {
 		try {
 			reader.close();
 		} catch (IOException e) {
-			e.printStackTrace();
+			e.printStackTrace();// ???????? пробрасывай это исключение
 		}
 	}
 

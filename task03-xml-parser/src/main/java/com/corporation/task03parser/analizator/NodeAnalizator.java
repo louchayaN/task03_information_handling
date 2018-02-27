@@ -23,7 +23,7 @@ public class NodeAnalizator implements Analizator{
 		NODE_TYPE_MATCHER.put("[^<].+", NodeType.CHARACTERS);
 	}
 	
-	private Reader reader;
+	private Reader reader;//представь себе, для чего ты создаешь этот объект - я собираюсь читать данные из... - и потом переименовывай переменную
 	
 	public NodeAnalizator(InputStream stream) throws UnsupportedEncodingException {
 		reader = new DefaultReader(stream);
@@ -45,7 +45,7 @@ public class NodeAnalizator implements Analizator{
 			}			
 		}
 		
-		try {
+		try {// придумано хорошо, но не надо закрытие ресурсов прятать, иначе можно просто неправильно использовать метод
 			return null;			
 		} finally {			
 			reader.close();
