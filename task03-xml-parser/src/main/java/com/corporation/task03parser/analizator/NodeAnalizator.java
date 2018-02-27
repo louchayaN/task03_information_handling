@@ -45,7 +45,7 @@ public class NodeAnalizator implements Analizator{
 			}			
 		}
 		
-		try {
+		try {// придумано хорошо, но не надо закрытие ресурсов прятать, иначе можно просто неправильно использовать метод
 			return null;			
 		} finally {			
 			reader.close();
